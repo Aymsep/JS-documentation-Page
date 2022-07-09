@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: block;
+    max-width:450px;
+    border-right: 1px solid black;
+    height:100vh;
+   
+    
+}
+#nav-header {
+    font-size:30px;
+    letter-spacing:1px;
+    border-bottom:1px solid black;
+    padding: 20px;
+}
+
+nav ul{
+    list-style: none;
+
+}
+nav ul li{
+    border-bottom:1px solid black;
+    padding:11.5px 20px;
+    font-size: 18px;
+    letter-spacing:1px;
+}
+nav ul li a {
+    color: black;
+}
+nav #ref {
+    border-bottom:none;
+}
+
+main{
+    flex: 1;
+    padding: 35px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+main #header-doc{
+    font-size: 30px;
+    letter-spacing:1px;
+}
+main section article{
+    line-height:25px;
+    padding-left: 20px;
+}
+
+main section article ul{
+    padding-left: 55px;
+}
+
+main section article ul li{
+    padding: 8px 0;
+}
+
+main section article code{
+    display:block;
+    padding:15px 20px;
+    background-color:rgb(199, 196, 196);
+    word-break: break-all;
+    font-size: 13px;
+    letter-spacing:1px;
+    border-radius: 4px;
+    line-height:30px;
+    margin-bottom: 10px;
+    word-break: keep-all;
+}
+
+#code-margin{
+    margin-top:10px ;
+}
+
+main section article p{
+    margin-bottom:12px;
+}
+
+@media screen and (max-width: 768px){
+   body {
+    flex-direction: column;
+   }
+   nav{
+    text-align: center;
+    max-width: 100%;
+    height: 250px;
+    overflow-y: scroll;
+   }
+   main{
+    overflow: hidden;
+   }
+   nav ul{
+    margin-top: 75px;
+   }
+   nav header.nav-hdr{
+    padding-top: 85px;   
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color:rgb(200, 200, 200);
+    color: white;
+    margin-bottom: 90px;
+    border-color: transparent;
+   }
+}
